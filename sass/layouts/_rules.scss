@@ -1,0 +1,59 @@
+//==================================
+// Rules
+//==================================
+
+.rules {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background-color: var(--general-wight);
+
+  &-container {
+  }
+  &-title {
+  }
+  &-list-text {
+    display: inline-flex;
+    flex-direction: column;
+
+    &::before {
+      margin-bottom: 30px;
+      content: "";
+      width: 270px;
+      height: 130px;
+      background-color: var(--section-bgr);
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      background-size: 70px 70px;
+      border-radius: 4px;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    &:nth-child(1)::before {
+      background-image: url(../images/antenna.svg);
+    }
+    &:nth-child(2)::before {
+      background-image: url(../images/clock.svg);
+    }
+    &:nth-child(3)::before {
+      background-image: url(../images/diagram.svg);
+    }
+    &:nth-child(4)::before {
+      background-image: url(../images/astronaut.svg);
+    }
+  }
+  &-list {
+    display: flex;
+    gap: 30px;
+
+    &-title {
+      margin-bottom: 10px;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: calc(16 / 14);
+    }
+    &-item {
+      color: var(--secondary-text-color);
+      font-size: 14px;
+      line-height: calc(24 / 14);
+    }
+  }
+}
