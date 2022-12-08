@@ -7,7 +7,7 @@
   background-color: var(--hero-bgr-color);
 
   &-container {
-    display: flex;
+    @include centeredFlex; //mixin centeredFlex
   }
 
   .link-logo {
@@ -113,9 +113,7 @@
     color: var(--general-wight);
   }
   &-input-field {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include centeredFlex; //mixin centeredFlex
     gap: 12px;
   }
   &-input-text {
