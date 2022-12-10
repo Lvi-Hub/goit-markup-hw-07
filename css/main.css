@@ -39,6 +39,7 @@ portfolio             #F5F5F5
 }
 
 body {
+  min-width: 1600px;
   color: var(--primary-text-color);
   font-family: Roboto, sans-serif;
   font-style: normal;

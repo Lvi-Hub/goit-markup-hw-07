@@ -45,8 +45,9 @@
     //------------------------------------------
 
     @each $iconName in $rules-list-icons {
-      $num: $num + 1;
-      &:nth-child(#{$num})::before {
+      $idx: index($rules-list-icons, $iconName);
+
+      &:nth-child(#{$idx1})::before {
         background-image: url(../images/#{$iconName}.svg);
       }
     }
