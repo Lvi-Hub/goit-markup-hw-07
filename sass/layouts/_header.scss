@@ -12,7 +12,9 @@
 }
 
 .link-logo {
-  @include centeredFlex; //mixin centeredFlex
+  display: flex;
+  justify-content: left;
+  align-items: center;
   font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;

@@ -1,20 +1,23 @@
 /* _________________Customers_______________ */
-.customers-container {
+.customers{
+  background-color: var(--general-wight);
+}
+.customers__container {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.customers-title {
+.customers__title {
   margin-bottom: 50px;
   font-size: 36px;
   line-height: calc(42 / 36);
   text-align: center;
   letter-spacing: 0.03em;
 }
-.customers-list {
+.labels {
   display: flex;
   gap: 30px;
 }
-.customers-list-item {
+.labels__item {
   width: 172px;
   height: 92px;
 
@@ -25,7 +28,7 @@
   }
 }
 
-.customers-list-link {
+.labels__link {
   @include centeredFlex; //mixin centeredFlex
 
   width: 100%;
@@ -45,5 +48,5 @@
     transform: fill;
   }
 }
-.customers-link-text {
+.labels__icon {
 }
